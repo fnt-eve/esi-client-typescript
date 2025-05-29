@@ -178,7 +178,7 @@ export class BaseAPI {
             || isBlob(overriddenInit.body)) {
           body = overriddenInit.body;
         } else if (this.isJsonMime(headers['Content-Type'])) {
-          body = JSON.stringify(overriddenInit.body);
+          body = JSON.stringify((function convertMapsAndSetsToPlain(value: any): any {if (typeof value !== "object" || !value) {return value;} if (value instanceof Set) { return Array.from(value).map(item => convertMapsAndSetsToPlain(item)); } if (value instanceof Map) { return Object.fromEntries([...value.entries()].map(([k, v]) => [k, convertMapsAndSetsToPlain(v)])); } if (Array.isArray(value)) { return value.map(it => convertMapsAndSetsToPlain(it)); } return Object.fromEntries(Object.entries(value) .map(([k, v]) => [k, convertMapsAndSetsToPlain(v)])); })(overriddenInit.body));
         } else {
           body = overriddenInit.body;
         }

@@ -31,8 +31,8 @@
   ],
   "scripts": {
     "build": "node_modules/.bin/tsc",
-    "generate": "node_modules/.bin/openapi-generator-cli generate",
-    "esi-version": "curl \"https://esi.evetech.net/_latest/swagger.json\" -s | jq \".info.version\" | tr -d '\"' > VERSION-major",
+    "generate": "node_modules/.bin/openapi-generator-cli generate && ./fix_sets_and_maps.sh",
+    "esi-version": "curl \"https://esi.evetech.net/_latest/swagger.json\" -s | jq \".info.version\" | tr -d '\"' > VERSION",
     "clean": "rm -rf dist"
   },
   "devDependencies": {

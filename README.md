@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@fnt-eve/esi-client-typescript)](https://www.npmjs.com/package/@fnt-eve/esi-client-typescript)
 
 ## Overview
-TypeScript bindings for EVE Swagger Interface (ESI). Uses [fetch](https://openapi-generator.tech/docs/generators/typescript-fetch/) under the hood.
+TypeScript bindings for EVE Swagger Interface (ESI). Uses [fetch](https://openapi-generator.tech/docs/generators/typescript-fetch/) under the hood. It also applies a fix to the upstream bug that causes `Set` and `Map` types to not be serialized in request body.
 
 ## Installation
 
@@ -28,7 +28,7 @@ const esiUniverseApi = new UniverseApi(DefaultConfig)
 // Workaround for typed Sets in generated service methods
 // https://github.com/OpenAPITools/openapi-generator/issues/14055
 // https://github.com/OpenAPITools/openapi-generator/issues/11746
-const req: PostUniverseNamesRequest = {ids: [13682, 56846, 40574] as unknown as Set<number>}
+const req: PostUniverseNamesRequest = {ids: new Set([13682, 56846, 40574])}
 esiUniverseApi.postUniverseNames(req)
 ```
 
