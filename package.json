@@ -1,6 +1,6 @@
 {
   "name": "esi-client-typescript",
-  "version": "1.0.0",
+  "version": "1.33.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -13,6 +13,7 @@
   "author": "greg2010",
   "license": "MIT",
   "scripts": {
+    "build": "node_modules/.bin/tsc",
     "generate": "node_modules/.bin/openapi-generator-cli generate",
     "version": "curl \"https://esi.evetech.net/_latest/swagger.json\" -s | jq \".info.version\" > VERSION",
     "clean": "rm -rf dist"
