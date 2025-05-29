@@ -3,8 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@fnt-eve/esi-client-typescript)](https://www.npmjs.com/package/@fnt-eve/esi-client-typescript)
 
 ## Overview
-
-This is a TypeScript library, named `esi-client-typescript`, designed to interact with the EVE Swagger Interface (ESI). It provides easy access to various ESI endpoints for developers working with EVE Online data.
+TypeScript bindings for EVE Swagger Interface (ESI). Uses [fetch](https://openapi-generator.tech/docs/generators/typescript-fetch/) under the hood.
 
 ## Installation
 
@@ -20,20 +19,25 @@ yarn add @fnt-eve/esi-client-typescript
 
 Here's a basic example of how to use the library in your project:
 
-```
-import { EsiClient } from '@fnt-eve/esi-client-typescript';
+```typescript
+import { UniverseApi, type PostUniverseNamesRequest, DefaultConfig } from '@fnt-eve/esi-client-typescript';
 
-const esi = new EsiClient();
+const esiUniverseApi = new UniverseApi(DefaultConfig)
 
-// Example usage
-esi.getCharacter(123456789).then(character => console.log(character));
+
+// Workaround for typed Sets in generated service methods
+// https://github.com/OpenAPITools/openapi-generator/issues/14055
+// https://github.com/OpenAPITools/openapi-generator/issues/11746
+const req: PostUniverseNamesRequest = {ids: [13682, 56846, 40574] as unknown as Set<number>}
+esiUniverseApi.postUniverseNames(req)
 ```
 
 ## Building the Library
-This library is built automatically from the latest Swagger JSON provided by CCP. The build process involves:
-1. Fetching the latest Swagger JSON from ESI's official site.
-2. Generating TypeScript types and API clients based on this JSON schema.
-3. Bundling these into a distributable format (JavaScript and TypeScript definitions).
+This library is built automatically from the latest Swagger JSON provided by CCP.
+
+## Documentation
+
+For detailed API documentation, please refer to the [EVE Swagger Interface](https://esi.evetech.net/ui/).
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.

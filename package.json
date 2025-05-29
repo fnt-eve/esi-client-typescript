@@ -21,6 +21,14 @@
   "homepage": "https://github.com/fnt-eve/esi-client-typescript#readme",
   "author": "greg2010",
   "license": "MIT",
+  "keywords": [
+    "typescript",
+    "esi",
+    "eve-Online",
+    "api-client",
+    "swagger-codegen",
+    "fetch"
+  ],
   "scripts": {
     "build": "node_modules/.bin/tsc",
     "generate": "node_modules/.bin/openapi-generator-cli generate",
