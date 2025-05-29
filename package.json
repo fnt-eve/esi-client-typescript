@@ -1,0 +1,24 @@
+{
+  "name": "esi-client-typescript",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fnt-eve/esi-client-typescript.git"
+  },
+  "author": "greg2010",
+  "license": "MIT",
+  "scripts": {
+    "generate": "node_modules/.bin/openapi-generator-cli generate",
+    "version": "curl \"https://esi.evetech.net/_latest/swagger.json\" -s | jq \".info.version\" > VERSION",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.20.2",
+    "typescript": "^5.8.3"
+  }
+}
