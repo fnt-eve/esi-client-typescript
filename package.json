@@ -1,6 +1,9 @@
 {
-  "name": "esi-client-typescript",
-  "version": "1.33.0",
+  "name": "@fnt-eve/esi-client-typescript",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -10,12 +13,16 @@
     "type": "git",
     "url": "git+https://github.com/fnt-eve/esi-client-typescript.git"
   },
+  "bugs": {
+    "url": "https://github.com/fnt-eve/esi-client-typescript/issues"
+  },
+  "homepage": "https://github.com/fnt-eve/esi-client-typescript#readme",
   "author": "greg2010",
   "license": "MIT",
   "scripts": {
     "build": "node_modules/.bin/tsc",
     "generate": "node_modules/.bin/openapi-generator-cli generate",
-    "version": "curl \"https://esi.evetech.net/_latest/swagger.json\" -s | jq \".info.version\" > VERSION",
+    "esi-version": "curl \"https://esi.evetech.net/_latest/swagger.json\" -s | jq \".info.version\" > VERSION",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
