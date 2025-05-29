@@ -5,7 +5,7 @@
     "access": "public",
     "provenance": true
   },
-  "version": "1.33.1",
+  "version": "1.33.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
