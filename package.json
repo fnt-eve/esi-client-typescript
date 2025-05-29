@@ -1,9 +1,11 @@
 {
   "name": "@fnt-eve/esi-client-typescript",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public",
+    "provenance": true
   },
-  "version": "1.33.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

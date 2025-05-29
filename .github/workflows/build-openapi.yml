@@ -11,8 +11,8 @@ jobs:
     steps:
     - uses: actions/setup-node@v4
       with:
+        registry-url: 'https://registry.npmjs.org'
         always-auth: true
-        registry-url: 'https://npm.pkg.github.com'
     - uses: actions/checkout@v2
     - name: Generate openapi client
       run: |-
@@ -36,4 +36,4 @@ jobs:
         yarn run build
         yarn publish --access public
       env:
-        NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        NODE_AUTH_TOKEN: ${{secrets.FNTEVE_NPMJS_TOKEN}}
