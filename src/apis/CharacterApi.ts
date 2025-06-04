@@ -261,7 +261,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/characters/{character_id}/agents_research/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v1/characters/{character_id}/agents_research/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -317,7 +317,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v3/characters/{character_id}/blueprints/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v2/characters/{character_id}/blueprints/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -360,7 +360,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/characters/{character_id}/corporationhistory/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v1/characters/{character_id}/corporationhistory/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -412,7 +412,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/characters/{character_id}/fatigue/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v1/characters/{character_id}/fatigue/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -464,7 +464,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/characters/{character_id}/medals/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v1/characters/{character_id}/medals/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -568,7 +568,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/characters/{character_id}/notifications/contacts/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v1/characters/{character_id}/notifications/contacts/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -663,7 +663,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v3/characters/{character_id}/roles/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v2/characters/{character_id}/roles/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -715,7 +715,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/characters/{character_id}/standings/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v1/characters/{character_id}/standings/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -767,7 +767,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/characters/{character_id}/titles/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v1/characters/{character_id}/titles/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -866,7 +866,7 @@ export class CharacterApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v5/characters/{character_id}/cspa/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
+            path: `/v4/characters/{character_id}/cspa/`.replace(`{${"character_id"}}`, encodeURIComponent(String(requestParameters['characterId']))),
             method: 'POST',
             headers: headerParameters,
             query: queryParameters,

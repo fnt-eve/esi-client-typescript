@@ -295,7 +295,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v5/corporations/{corporation_id}/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v4/corporations/{corporation_id}/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -338,7 +338,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v3/corporations/{corporation_id}/alliancehistory/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v2/corporations/{corporation_id}/alliancehistory/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -394,7 +394,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v3/corporations/{corporation_id}/blueprints/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v2/corporations/{corporation_id}/blueprints/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -450,7 +450,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v3/corporations/{corporation_id}/containers/logs/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v2/corporations/{corporation_id}/containers/logs/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -502,7 +502,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/divisions/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/divisions/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -554,7 +554,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/facilities/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/facilities/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -653,7 +653,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/medals/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/medals/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -709,7 +709,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/medals/issued/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/medals/issued/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -761,7 +761,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v4/corporations/{corporation_id}/members/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v3/corporations/{corporation_id}/members/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -813,7 +813,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/members/limit/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/members/limit/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -869,7 +869,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/members/titles/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/members/titles/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -921,7 +921,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/membertracking/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/membertracking/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -973,7 +973,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/roles/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/roles/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -1029,7 +1029,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/roles/history/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/roles/history/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -1141,7 +1141,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/standings/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/standings/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -1197,7 +1197,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/starbases/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/starbases/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -1267,7 +1267,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/starbases/{starbase_id}/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))).replace(`{${"starbase_id"}}`, encodeURIComponent(String(requestParameters['starbaseId']))),
+            path: `/v1/corporations/{corporation_id}/starbases/{starbase_id}/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))).replace(`{${"starbase_id"}}`, encodeURIComponent(String(requestParameters['starbaseId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -1383,7 +1383,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/{corporation_id}/titles/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
+            path: `/v1/corporations/{corporation_id}/titles/`.replace(`{${"corporation_id"}}`, encodeURIComponent(String(requestParameters['corporationId']))),
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
@@ -1419,7 +1419,7 @@ export class CorporationApi extends runtime.BaseAPI {
         }
 
         const response = await this.request({
-            path: `/v2/corporations/npccorps/`,
+            path: `/v1/corporations/npccorps/`,
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
